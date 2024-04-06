@@ -4,6 +4,7 @@ import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { ButtonContainer, GitHubButton, MobileIcon, MobileLink, MobileMenu, Nav, NavbarContainer, NavItems, NavLink, NavLogo, Span } from './NavbarStyledComponent'
 import { Bio } from '../../data/constants';
+import { Link } from "react-router-dom";
 const NavBar = () => {
 
   const [open ,setOpen] = useState(false);
@@ -13,7 +14,7 @@ const NavBar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">
-          <a style={
+          <Link style={
             {
               display:"flex",
               alignItems:"center",
@@ -26,7 +27,7 @@ const NavBar = () => {
           } >
             <DiCssdeck size="3rem"/> <Span>Portfolio</Span>
 
-          </a>
+          </Link>
         </NavLogo>
         <MobileIcon><FaBars onClick={()=>{
           setOpen(!open);
