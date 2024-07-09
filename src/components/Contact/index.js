@@ -120,8 +120,6 @@ const ContactButton = styled.input`
   font-weight: 600;
 `
 
-
-
 const Contact = () => {
 
   //hooks
