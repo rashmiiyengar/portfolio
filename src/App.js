@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar/index.js";
 import HeroSection from "./components/HeroSection/index.js";
 import Skills from "./components/Skills..js/index.js";
 import Education from "./components/Education/index.js";
-import { BrowserRouter, BrowserRouter  } from "react-router-dom";
+import { BrowserRouter  } from "react-router-dom";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects/index.js";
 import { useState } from "react";
