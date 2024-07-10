@@ -58,9 +58,8 @@ function App() {
           }
       </Body>
       </BrowserRouter>
-      
     </ThemeProvider>
-  );
+  ); 
 }
 
 export default App;
