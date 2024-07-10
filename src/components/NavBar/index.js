@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
 
   const [open ,setOpen] = useState(false);
-  const [close,setClose] =useState(false);
+ 
   const theme = useTheme()
   return (
     <Nav>
