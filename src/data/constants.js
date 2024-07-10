@@ -184,7 +184,7 @@ export const Bio = {
         "https://private-user-images.githubusercontent.com/33377298/319862292-c9f269b8-5c46-460f-ab53-54ffa0dbaf5c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA1NjAyNDcsIm5iZiI6MTcyMDU1OTk0NywicGF0aCI6Ii8zMzM3NzI5OC8zMTk4NjIyOTItYzlmMjY5YjgtNWM0Ni00NjBmLWFiNTMtNTRmZmEwZGJhZjVjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzA5VDIxMTkwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI2MTdkODQzMzcwMDk4YTZiMzA4ODNlMWEzYzU3NjY4NTAwZTZhZWRkYjcyMmNjMDM2OWJlMDk4MjdiYTYwYTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.S64AcDT9L-p-E14wjV3UyIp2aVabRyXF1P91Ry244X8",
       tags: ["React Js", "Tailwindcss", "Redux"],
       category: "web app",
-      github: "hhttps://github.com/rashmiiyengar/React",
+      github: "https://github.com/rashmiiyengar/React",
       webapp: "https://master--rashmifoodapp.netlify.app/",
       
     },
