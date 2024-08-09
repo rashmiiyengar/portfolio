@@ -12,6 +12,7 @@ import { useState } from "react";
 import ProjectDetails from "./components/ProjectDetails/index.js";
 import Footer from "./components/Footer/index.js";
 
+
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -56,7 +57,7 @@ function App() {
         <Wrapper>
             <Education />   
           </Wrapper>
-
+         
           <Footer/>
           {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
