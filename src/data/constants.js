@@ -9,7 +9,7 @@ export const Bio = {
       "Software QA Engineer",
     ],
     description:
-      "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+      "I bring a strong motivation and versatility to every project I undertake. Passionate about learning and committed to delivering high-quality results, I approach challenges with a positive attitude. My growth mindset drives me to continuously improve and contribute effectively. I’m excited to leverage my skills to achieve great outcomes and make a meaningful impact.",
     github: "https://github.com/rashmiiyengar",
     resume:
       "https://drive.google.com/file/d/1Ikg8uZFp62q4YW2mCcZ0kYC8AbALW7HU/view?usp=drivesdk",
