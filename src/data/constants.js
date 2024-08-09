@@ -1,3 +1,8 @@
+import foodOrderingAppImage from  '..//images/food_app.png';
+import netflixCopy from  '..//images/netflix_copy.png';
+import mobileImage from  '..//images/mobile_image.jpg';
+import cypressLogo from  '..//images/cypress-logo.png';
+
 export const Bio = {
     name: "Rashmi Soundar",
     roles: [
@@ -181,7 +186,7 @@ export const Bio = {
       description:
         "Namaste React Live Course from Zero to Hero 🚀 by Akshay Saini(Founder of NamasteDev).",
       image:
-        "https://private-user-images.githubusercontent.com/33377298/319862292-c9f269b8-5c46-460f-ab53-54ffa0dbaf5c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA1NjAyNDcsIm5iZiI6MTcyMDU1OTk0NywicGF0aCI6Ii8zMzM3NzI5OC8zMTk4NjIyOTItYzlmMjY5YjgtNWM0Ni00NjBmLWFiNTMtNTRmZmEwZGJhZjVjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzA5VDIxMTkwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI2MTdkODQzMzcwMDk4YTZiMzA4ODNlMWEzYzU3NjY4NTAwZTZhZWRkYjcyMmNjMDM2OWJlMDk4MjdiYTYwYTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.S64AcDT9L-p-E14wjV3UyIp2aVabRyXF1P91Ry244X8",
+      foodOrderingAppImage,
       tags: ["React Js", "Tailwindcss", "Redux"],
       category: "web app",
       github: "https://github.com/rashmiiyengar/React",
@@ -190,8 +195,8 @@ export const Bio = {
     },
     {
       id: 1,
-      title: "Test Automation",
-      date: "Jan 2024 - present",
+      title: "Selenium Automation",
+      date: "Jan 2024 - March",
       description:
         "Selenium Test Automation for EComm Projects",
       image:
@@ -203,7 +208,7 @@ export const Bio = {
         "Maven",
         "POM",
       ],
-      category: "Software Testing",
+      category: "QA",
       github: "https://github.com/rashmiiyengar/AutomationProject",
       webapp: "rashminetflixclone.netlify.app",
     },
@@ -214,7 +219,7 @@ export const Bio = {
       description:
         "The Netflix clone is built using Reactjs ",
       image:
-        "https://private-user-images.githubusercontent.com/33377298/347150988-30245073-36a2-4d1c-979a-2c2b8c94faeb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA1NjAwOTAsIm5iZiI6MTcyMDU1OTc5MCwicGF0aCI6Ii8zMzM3NzI5OC8zNDcxNTA5ODgtMzAyNDUwNzMtMzZhMi00ZDFjLTk3OWEtMmMyYjhjOTRmYWViLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzA5VDIxMTYzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTMyN2ZkMzEwMjcxNTIzNGRhY2QxZTZmMDlkNjZmZGI5ZmMxOTBiY2ZkOWE0MDcxNjFjMThkODM1OTM2ODY1OTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.IPJlVDEwHXS6L7G6wGDH9j1fv8ssZEuqi-b2MxiLByg",
+      netflixCopy,
       tags: [
         "Selenium",
         "Java",
@@ -223,10 +228,50 @@ export const Bio = {
         "POM",
         
       ],
-      category: "FrontEnd Development",
+      category: "web app",
       github: "https://github.com/rashmiiyengar/React-netflixgpt",
       webapp: "rashminetflixclone.netlify.app",
-    }
+    },
+    {
+      id: 4,
+      title: "Mobile Automation",
+      date: "July 2024 - Present",
+      description:
+        "Mobile Test Automation ",
+      image:
+        mobileImage,
+      tags: [
+        "Appium",
+        "Java",
+        "TestNG",
+        "Maven",
+        "ADB",
+        "Android",
+        "iOS",
+        "XCODE"
+      ],
+      category: "QA",
+      github: "https://github.com/rashmiiyengar/MasterAppiumFramework",
+      webapp: "rashminetflixclone.netlify.app",
+    },
+    {
+      id: 4,
+      title: "Cypress",
+      date: "August 2024 - Present",
+      description:
+        "Automated end-to-end testing for web applications using Cypress, ensuring comprehensive coverage and reliable functionality ",
+      image:
+      cypressLogo,
+      tags: [
+        "Cypress",
+        "Javascript",
+        "Api Test",
+        "Reports",
+      ],
+      category: "QA",
+      github: "https://github.com/rashmiiyengar/cypress",
+      webapp: "rashminetflixclone.netlify.app",
+    },
    
     
   ];
