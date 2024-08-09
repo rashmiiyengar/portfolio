@@ -12,19 +12,20 @@ const Projects = ({openModal,setOpenModal}) => {
       <Wrapper>
         <Title>Projects</Title>
         <Desc>
-          I have worked on a wide range of projects. From Automnation projects to web apps. Here are some of my projects.
+          I have worked on a wide range of projects. From Automation projects to web apps. Here are some of my projects.
         </Desc>
         <ToggleButtonGroup >
-          {toggle === 'all' &&
-            <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
-            
-          }
+        <ToggleButton active={toggle === 'all'} value="all" onClick={() => setToggle('all')}>
+            All
+          </ToggleButton>
           <Divider />
-          {toggle === 'web app' &&
-            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
-           
-          }
+          <ToggleButton active={toggle === 'web app'} value="web app" onClick={() => setToggle('web app')}>
+            WEB APP'S
+          </ToggleButton>
           <Divider />
+          <ToggleButton active={toggle === 'QA'} value="QA" onClick={() => setToggle('QA')}>
+          QA
+          </ToggleButton>
           
          
         </ToggleButtonGroup>
@@ -33,7 +34,7 @@ const Projects = ({openModal,setOpenModal}) => {
             .map((project) => (
               <ProjectCards project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
-          {projects
+          {toggle !== 'all' && projects
             .filter((item) => item.category === toggle)
             .map((project) => (
               <ProjectCards project={project} openModal={openModal} setOpenModal={setOpenModal}/>

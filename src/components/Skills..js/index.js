@@ -6,9 +6,7 @@ import HeroBgAnimation from '../HeroBgAnimation';
 const Skills = () => {
   return (
     <Container id='skills'>
-
       <Wrapper>
-      
         <Title>
           Skills
         </Title>
