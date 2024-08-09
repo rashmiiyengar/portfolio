@@ -2,6 +2,8 @@ import foodOrderingAppImage from  '..//images/food_app.png';
 import netflixCopy from  '..//images/netflix_copy.png';
 import mobileImage from  '..//images/mobile_image.jpg';
 import cypressLogo from  '..//images/cypress-logo.png';
+import resumeFile from  '..//images/Rashmi_Soundar_Resume.pdf';
+
 
 export const Bio = {
     name: "Rashmi Soundar",
@@ -12,7 +14,7 @@ export const Bio = {
       "I bring a strong motivation and versatility to every project I undertake. Passionate about learning and committed to delivering high-quality results, I approach challenges with a positive attitude. My growth mindset drives me to continuously improve and contribute effectively. I’m excited to leverage my skills to achieve great outcomes and make a meaningful impact.",
     github: "https://github.com/rashmiiyengar",
     resume:
-      "https://drive.google.com/file/d/1Ikg8uZFp62q4YW2mCcZ0kYC8AbALW7HU/view?usp=drivesdk",
+      resumeFile,
     linkedin: "https://www.linkedin.com/in/rashmi-soundar-22a62276/",
   };
   
@@ -276,10 +278,3 @@ export const Bio = {
     
   ];
   
-  export const TimeLineData = [
-    { year: 2017, text: "Started my journey" },
-    { year: 2018, text: "Worked as a freelance developer" },
-    { year: 2019, text: "Founded JavaScript Mastery" },
-    { year: 2020, text: "Shared my projects with the world" },
-    { year: 2021, text: "Started my own platform" },
-  ];
