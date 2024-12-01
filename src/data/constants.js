@@ -3,7 +3,8 @@ import netflixCopy from  '..//images/netflix_copy.png';
 import mobileImage from  '..//images/mobile_image.jpg';
 import cypressLogo from  '..//images/cypress-logo.png';
 import resumeFile from  '..//images/Rashmi_Soundar_Resume.pdf';
-
+import playwrightLogo from  '..//images/playwright_logo.jpeg'
+import playwrightGit from  '..//images/playwright_git.png'
 
 export const Bio = {
     name: "Rashmi Soundar",
@@ -26,6 +27,11 @@ export const Bio = {
           name: "Manual Testing",
           image:
             "https://assets-global.website-files.com/634da4a9e528a8459a2297e7/63595c1d6acf52ae0bf8e35b_6148a40ba84c5b58b315744f_pZa7c3Z0cphRvcP7JYEUmefiv8-Kzx1-d_M9sFS3wXqjqOi6n7xzpyYsavvacN4tnKeLPL5Mlw4WLudX0bmjIpiM6PMQn0dao3fuRJIyfgcc2MrdY6BSyBL-CFh5gfybgeHDr-wg%253Ds0.jpeg",
+        },
+        {
+          name: "Playwright",
+          image:
+            playwrightLogo
         },
         {
           name: "Selenium",
@@ -137,7 +143,7 @@ export const Bio = {
       role: "Senior Software Test Engineer",
       company: "Collaberra Technologies",
       date: "Oct 2022 - Apr 2023",
-      desc: "Responsible for all aspects of the QA cycle for assigned projects.Responsible for testing Mobile App, Design, implement, and execute test plans and test cases",
+      desc: "Accountable for the entire QA lifecycle, including designing, implementing, and executing comprehensive test plans and test cases. Proficient in validating mobile applications to ensure functionality, performance, and user experience align with project requirements and quality standards",
       skills: [
         "Manual Testing [Web and Mobile applications]",
         "Selenium",
@@ -145,7 +151,7 @@ export const Bio = {
         "Jira",
         "Maven",
         "Postman",
-        "Cypress",
+        "Playwright",
         "JavaScript",
       ]
     },
@@ -155,7 +161,7 @@ export const Bio = {
       role: "Senior Associate",
       company: "Synechron Technologies",
       date: "Feb 2018 - Sep 2022",
-      desc: "Worked on Manual and Automated testcases having solid understanding of SDLC wih work experiance in EComm and Insurance domain",
+      desc: "Possess a strong understanding of the Software Development Life Cycle (SDLC) and hands-on experience in creating and executing both manual and automated test cases. Demonstrated expertise in ensuring quality deliverables, with professional experience in the Insurance domain.",
       skills: [
         "Manual Testing [Web and Mobile applications]",
         "Selenium",
@@ -183,18 +189,21 @@ export const Bio = {
     
     {
       id: 0,
-      title: "Food Ordering App",
-      date: "March 2024 - April 2024",
+      title: "Playwright",
+      date: "October 2024 - November 2024",
       description:
-        "Namaste React Live Course from Zero to Hero 🚀 by Akshay Saini(Founder of NamasteDev).",
-      image:
-      foodOrderingAppImage,
-      tags: ["React Js", "Tailwindcss", "Redux"],
-      category: "web app",
-      github: "https://github.com/rashmiiyengar/React",
-      webapp: "https://master--rashmifoodapp.netlify.app/",
-      
-    },
+        "Developed a powerful web automation framework with Playwright, focusing on efficient end-to-end testing and streamlined workflows. The project showcases expertise in modern testing strategies and highlights the ability to build reliable, maintainable solutions for quality assurance.",
+      image:playwrightGit
+      ,
+      tags: [
+        "Playwright",
+        "Javascript",
+        "Api Test",
+        "Allure Reports",
+      ],
+      category: "QA",
+      github: "https://github.com/rashmiiyengar/playwright",
+    },,
     {
       id: 1,
       title: "Selenium Automation",
@@ -216,6 +225,70 @@ export const Bio = {
     },
     {
       id: 2,
+      title: "Cypress",
+      date: "August 2024 - Present",
+      description:
+        "Automated end-to-end testing for web applications using Cypress, ensuring comprehensive coverage and reliable functionality ",
+      image:
+      cypressLogo,
+      tags: [
+        "Cypress",
+        "Javascript",
+        "Api Test",
+        "Reports",
+      ],
+      category: "QA",
+      github: "https://github.com/rashmiiyengar/cypress",
+     
+    },
+    {
+      id: 3,
+      title: "Mobile Automation",
+      date: "July 2024 - Present",
+      description:
+        " Mobile | android | iOS | Java | OOPS | Appium | TestNG | Maven | ExtentReport | Java mail API | Logging (Log4J2) | Design Patterns (Page Object Model, Singleton) | Page Factories | Jenkins | Data-Driven Testing using JSON file | Expected Data using XML file",
+      image:
+        mobileImage,
+      tags: [
+        "Appium",
+        "Java",
+        "TestNG",
+        "Maven",
+        "ADB",
+        "Android",
+        "iOS",
+        "XCODE"
+      ],
+      category: "QA",
+      github: "https://github.com/rashmiiyengar/MasterAppiumFramework",
+      webapp: "rashminetflixclone.netlify.app",
+    },
+    {
+      id: 4,
+      title: "Selenium Automation Framework with CI/CD",
+      date: "November 2024 - Present",
+      description:
+        "Created a Selenium-based automation framework integrated with Docker for isolated test environments and Jenkins for continuous integration and delivery. This project demonstrates expertise in building scalable, reliable, and automated testing pipelines for seamless deployment workflows.",
+      image:
+        "https://www.mabl.com/hubfs/Selenium-Blog-Featured-Image-18SEP2020-1.png#keepProtocol",
+      tags: [
+        
+        "Selenium",
+        "Java",
+        "TestNG",
+        "Maven",
+        "POM",
+        "Jenkins",
+        "Docker",
+        
+      ],
+      category: "QA",
+      github: "https://github.com/rashmiiyengar/SDET_Selenium_Framework",
+     
+    },
+   
+    {
+      id: 5,
       title: "Netflix Clone",
       date: "Jan 2024 - Mar 2024",
       description:
@@ -235,46 +308,19 @@ export const Bio = {
       webapp: "rashminetflixclone.netlify.app",
     },
     {
-      id: 4,
-      title: "Mobile Automation",
-      date: "July 2024 - Present",
+      id: 6,
+      title: "Food Ordering App",
+      date: "March 2024 - April 2024",
       description:
-        "Mobile Test Automation ",
+        "Namaste React Live Course from Zero to Hero 🚀 by Akshay Saini(Founder of NamasteDev).",
       image:
-        mobileImage,
-      tags: [
-        "Appium",
-        "Java",
-        "TestNG",
-        "Maven",
-        "ADB",
-        "Android",
-        "iOS",
-        "XCODE"
-      ],
-      category: "QA",
-      github: "https://github.com/rashmiiyengar/MasterAppiumFramework",
-      webapp: "rashminetflixclone.netlify.app",
+      foodOrderingAppImage,
+      tags: ["React Js", "Tailwindcss", "Redux"],
+      category: "web app",
+      github: "https://github.com/rashmiiyengar/React",
+      webapp: "https://master--rashmifoodapp.netlify.app/",
+      
     },
-    {
-      id: 4,
-      title: "Cypress",
-      date: "August 2024 - Present",
-      description:
-        "Automated end-to-end testing for web applications using Cypress, ensuring comprehensive coverage and reliable functionality ",
-      image:
-      cypressLogo,
-      tags: [
-        "Cypress",
-        "Javascript",
-        "Api Test",
-        "Reports",
-      ],
-      category: "QA",
-      github: "https://github.com/rashmiiyengar/cypress",
-      webapp: "rashminetflixclone.netlify.app",
-    },
-   
     
   ];
   
