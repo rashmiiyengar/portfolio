@@ -186,7 +186,6 @@ export const Bio = {
   ];
   
   export const projects = [
-    
     {
       id: 0,
       title: "Playwright",
@@ -203,7 +202,7 @@ export const Bio = {
       ],
       category: "QA",
       github: "https://github.com/rashmiiyengar/playwright",
-    },,
+    },
     {
       id: 1,
       title: "Selenium Automation",
