@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 const AlertsComponent = () => {
   const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="p-6 max-w-md mx-auto space-y-6 bg-gray-800 text-white rounded-lg shadow-lg">
       <h2 className="text-xl font-bold text-center">Alerts Demo</h2>
-
 
       {/* Buttons */}
       <div className="flex flex-wrap gap-3 justify-center">
@@ -16,7 +16,7 @@ const AlertsComponent = () => {
           JS Alert
         </button>
         <button
-          onClick={() => setShowModal(true)}
+          onClick={() => setShowModal(true)} 
           className="px-4 py-2 bg-purple-500 rounded hover:bg-purple-600"
         >
           Custom Confirm
@@ -30,7 +30,7 @@ const AlertsComponent = () => {
             <p className="mb-4">Are you sure?</p>
             <div className="flex justify-end space-x-4">
               <button
-                onClick={() => setShowModal(false)}
+                onClick={() => setShowModal(false)} // This will close the modal without any action
                 className="px-4 py-2 bg-gray-400 rounded hover:bg-gray-500"
               >
                 Cancel
@@ -38,7 +38,7 @@ const AlertsComponent = () => {
               <button
                 onClick={() => {
                   setShowModal(false);
-                  alert("Confirmed!");
+                
                 }}
                 className="px-4 py-2 bg-green-500 rounded hover:bg-green-600"
               >
