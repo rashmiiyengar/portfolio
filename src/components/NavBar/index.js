@@ -8,7 +8,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-  const theme = useTheme();
+
   const location = useLocation(); // Get current URL path
 
   // Function to handle navigation and scrolling

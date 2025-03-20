@@ -2,35 +2,10 @@ import React, { useState } from "react";
 
 const AlertsComponent = () => {
   const [showModal, setShowModal] = useState(false);
-  const [toast, setToast] = useState(null);
-
-  // Function to show toast
-  const showToast = (message, type) => {
-    setToast({ message, type });
-
-    // Auto-hide the toast after 3 seconds
-    setTimeout(() => setToast(null), 3000);
-  };
-
   return (
     <div className="p-6 max-w-md mx-auto space-y-6 bg-gray-800 text-white rounded-lg shadow-lg">
       <h2 className="text-xl font-bold text-center">Alerts Demo</h2>
 
-      {/* Toast Notifications */}
-      <div className="text-center">
-        <h3 className="text-lg font-semibold mb-4">Toast Notifications</h3>
-
-        {/* Toast Notification */}
-        {toast && (
-          <div
-            className={`fixed top-5 right-5 px-4 py-2 rounded-lg shadow-lg text-white ${
-              toast.type === "success" ? "bg-green-500" : "bg-yellow-500"
-            }`}
-          >
-            {toast.message}
-          </div>
-        )}
-      </div>
 
       {/* Buttons */}
       <div className="flex flex-wrap gap-3 justify-center">
