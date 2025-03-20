@@ -4,65 +4,61 @@ import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { ButtonContainer, GitHubButton, MobileIcon, MobileLink, MobileMenu, Nav, NavbarContainer, NavItems, NavLink, NavLogo, Span } from './NavbarStyledComponent'
 import { Bio } from '../../data/constants';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
+  const theme = useTheme();
+  const location = useLocation(); // Get current URL path
 
-  const [open ,setOpen] = useState(false);
- 
-  const theme = useTheme()
+  // Function to handle navigation and scrolling
+  const handleNavClick = (sectionId) => {
+    if (location.pathname !== "/") {
+      // Navigate to home first
+      window.location.href = `/#${sectionId}`;
+    } else {
+      // Scroll to section directly
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    }
+    setOpen(false);
+  };
+
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">
-          <Link style={
-            {
-              display:"flex",
-              alignItems:"center",
-              color:"white",
-              marginBottom:"20;",
-              cursor:"pointer",
-            }
-          } >
-            <DiCssdeck size="3rem"/> <Span>Portfolio</Span>
-
+        <NavLogo>
+          <Link to="/" style={{ display: "flex", alignItems: "center", color: "white", cursor: "pointer" }}>
+            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
           </Link>
         </NavLogo>
-        <MobileIcon><FaBars onClick={()=>{
-          setOpen(!open);
-        }}/></MobileIcon>
+
+        <MobileIcon>
+          <FaBars onClick={() => setOpen(!open)} />
+        </MobileIcon>
+
         <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experiance">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <NavLink as="button" onClick={() => handleNavClick("about")}>About</NavLink>
+          <NavLink as="button" onClick={() => handleNavClick("skills")}>Skills</NavLink>
+          <NavLink as="button" onClick={() => handleNavClick("experience")}>Experience</NavLink>
+          <NavLink as="button" onClick={() => handleNavClick("projects")}>Projects</NavLink>
+          <NavLink as="button" onClick={() => handleNavClick("education")}>Education</NavLink>
         </NavItems>
+
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
+          <GitHubButton as={Link} to="/practice" style={{ marginLeft: "10px" }}>Practice</GitHubButton>
         </ButtonContainer>
       </NavbarContainer>
-      {
-          open &&
-          <MobileMenu open={open}>
-            <MobileLink href="#about" onClick={() => {
-              setOpen(!open)
-            }}>About</MobileLink>
-            <MobileLink href='#skills' onClick={() => {
-              setOpen(!open)
-            }}>Skills</MobileLink>
-            <MobileLink href='#experience' onClick={() => {
-              setOpen(!open)
-            }}>Experience</MobileLink>
-            <MobileLink href='#projects' onClick={() => {
-              setOpen(!open)
-            }}>Projects</MobileLink>
-            <MobileLink href='#education' onClick={() => {
-              setOpen(!open)
-            }}>Education</MobileLink>
-            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
-          </MobileMenu>
-        }
+
+      {open && (
+        <MobileMenu open={open}>
+          <MobileLink as="button" onClick={() => handleNavClick("about")}>About</MobileLink>
+          <MobileLink as="button" onClick={() => handleNavClick("skills")}>Skills</MobileLink>
+          <MobileLink as="button" onClick={() => handleNavClick("experience")}>Experience</MobileLink>
+          <MobileLink as="button" onClick={() => handleNavClick("projects")}>Projects</MobileLink>
+          <MobileLink as="button" onClick={() => handleNavClick("education")}>Education</MobileLink>
+        </MobileMenu>
+      )}
     </Nav>
   );
 };

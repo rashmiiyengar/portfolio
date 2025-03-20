@@ -5,13 +5,13 @@ import NavBar from "./components/NavBar/index.js";
 import HeroSection from "./components/HeroSection/index.js";
 import Skills from "./components/Skills..js/index.js";
 import Education from "./components/Education/index.js";
-import { BrowserRouter  } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects/index.js";
 import { useState } from "react";
 import ProjectDetails from "./components/ProjectDetails/index.js";
 import Footer from "./components/Footer/index.js";
-
+import PracticeHome from "./components/PracticePage/PracticeHome.js";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -36,36 +36,44 @@ const Wrapper = styled.div`
 `;
 
 function App() {
-
   const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
     <ThemeProvider theme={darkTheme}>
       <BrowserRouter>
-      <NavBar />
-      <Body>
-        <HeroSection />
+        <NavBar />
+        <Body>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <HeroSection />
 
-        <Wrapper>
-            <Skills />
-            <Experience/>
-        </Wrapper>
+                  <Wrapper>
+                    <Skills />
+                    <Experience />
+                  </Wrapper>
+                  <Projects openModal={openModal} setOpenModal={setOpenModal} />
+                  <Wrapper>
+                    <Education />
+                  </Wrapper>
 
-       
-        <Projects openModal={openModal} setOpenModal={setOpenModal} />
-       
-          
-        <Wrapper>
-            <Education />   
-          </Wrapper>
-         
-          <Footer/>
-          {openModal.state &&
-            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          }
-      </Body>
+                  <Footer />
+                  {openModal.state && (
+                    <ProjectDetails
+                      openModal={openModal}
+                      setOpenModal={setOpenModal}
+                    />
+                  )}
+                </>
+              }
+            />
+          <Route path="/practice" element={<PracticeHome />} />
+          </Routes>
+        </Body>
       </BrowserRouter>
     </ThemeProvider>
-  ); 
+  );
 }
 
 export default App;
