@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useTheme } from 'styled-components';
 import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { ButtonContainer, GitHubButton, MobileIcon, MobileLink, MobileMenu, Nav, NavbarContainer, NavItems, NavLink, NavLogo, Span } from './NavbarStyledComponent'
