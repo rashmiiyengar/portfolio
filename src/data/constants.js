@@ -139,6 +139,24 @@ export const Bio = {
     
     {
       id: 1,
+      img: "https://static.wixstatic.com/media/7a2068_3251e2e5b8c846b18f70a93ce4c0778a~mv2.png/v1/fill/w_500,h_500,al_c/7a2068_3251e2e5b8c846b18f70a93ce4c0778a~mv2.png",
+      role: "SDET",
+      company: "Incredihire",
+      date: "Nov 2024 - Present",
+      desc: "Currently working as a freelance SDET, Joined the company where no formal test process existed and spearheaded the development of a complete test automation framework from scratch using Playwright.Designed and implemented fixtures for Google authentication login to streamline the testing process.",
+      skills: [
+        "Manual Testing [Web and Mobile applications]",
+        "Playwright",
+        "Typescript",
+        "JavaScript",
+        "SQL",
+        "Postman",
+        "Functional Testing",
+  ,
+      ]
+    },
+    {
+      id: 2,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTthDJTnc2fQjI_STRj2MeASXbbIBxn6lFGGfwsT8s4Ig&s",
       role: "Senior Software Test Engineer",
       company: "Collaberra Technologies",
@@ -156,7 +174,7 @@ export const Bio = {
       ]
     },
     {
-      id: 2,
+      id: 3,
       img: "https://mma.prnewswire.com/media/1251848/Synechron_Logo.jpg?p=facebook",
       role: "Senior Associate",
       company: "Synechron Technologies",
