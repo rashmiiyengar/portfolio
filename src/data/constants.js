@@ -152,7 +152,6 @@ export const Bio = {
         "SQL",
         "Postman",
         "Functional Testing",
-  ,
       ]
     },
     {
